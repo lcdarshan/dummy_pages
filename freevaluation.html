@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PX8KM5V7');</script>
+        <!-- End Google Tag Manager -->
+    <title>Your Page Title</title>
+    <!-- Add any additional head elements here, such as meta tags, styles, or scripts -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX8KM5V7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="sellbybidform" id="fv-form">
+        <form action="https://www.sgcarmart.com/quotz/includes/form_process.php?type=fv" method="post" name="freeValuationForm" id="freeValuationForm">
+            <div class="col-md-12 form-input-borders">
+                <input type="text" id="name" name="name" class="form-control" value="" placeholder="Your Name" required="">
+            </div>
+            <div class="col-md-6 form-input-borders">
+                <input type="text" id="contact" name="contact" class="form-control" pattern=".{8,8}" maxlength="8" onkeypress="return isNumberKey(this, event)" value="" placeholder="Contact Number" required="">
+            </div>
+            <div class="col-md-6 form-input-borders">
+                <input type="text" id="carplate" name="carplate" class="form-control" maxlength="8" value="" placeholder="Vehicle Plate Number" required="">
+            </div>
+            <div class="col-md-12 form-input-borders">
+                <select class="form-control" id="owneridtype" name="owneridtype" onchange="IDChange();">
+                    <option value="6">Business (e.g. 51234567M)</option>
+                    <option value="8">Club/Association/Organisation (e.g. T08PQ1234A)</option>
+                    <option value="7">Company (e.g. 198912345K)</option>
+                    <!-- Add other options here -->
+                </select>
+            </div>
+            <div class="col-md-12 form-input-borders">
+                <input type="text" placeholder="Owner's ID (last 4 characters e.g. 456D)" id="nric" name="nric" class="form-control" title="Minimum 4 characters with at least 1 Alphabet" pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){1})(?=(?:\D*\d){3}).*" maxlength="4" value="" required="">
+            </div>
+            <div class="col-md-12 form-input-borders">
+                <input type="text" placeholder="Email" id="email" name="email" class="form-control" required="">
+            </div>
+            <input type="hidden" name="params" id="params" value="d">
+            <input type="hidden" name="isIframe" id="isIframe" value="0">
+            <input type="hidden" name="submitFVForm" value="ok">
+            <div class="col-md-12 sbb-book-aform-info">
+                <input type="checkbox" name="agreeterms" id="agreeterms" value="1" style="display:inline;" required=""><label for="agreeterms" style="font-weight:normal; display:inline;line-height:13px;">&nbsp;&nbsp;I agree for Quotz &amp; Sgcarmart to contact me on matters related to my vehicle. Your information is safe with us. Learn more about our <a href="https://www.quotz.com.sg/privacy-statement" target="_blank">Privacy Policy</a>.</label>
+            </div>
+            <div class="col-md-12 p-top10" align="left">
+                <button type="submit" class="btn sbb-book-aform-button submitbtn" style="width:100%;" onclick="javascript: return Check(document.freeValuationForm);" value="Submit">Submit Details</button>
+            </div>
+        </form>
+    </div>
+    <!-- Add any additional HTML content or scripts for your page within the body tag -->
+</body>
+</html>
