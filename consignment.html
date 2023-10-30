@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PX8KM5V7');</script>
+    <!-- End Google Tag Manager -->
+    <title>Car Consignment Page</title>
+    <!-- You can include any additional head elements here, such as stylesheets or scripts -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX8KM5V7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="content"  style="border: 2px solid #db1313">
+        <div class="consignment_top_banner">
+            <div class="margin_center">
+                <div class="floatleft consignment_banner" style="width:51%;">
+                    <h1 class="font_bold font_white">SELL YOUR CAR<br>BY CONSIGNMENT</h1>
+                    <p class="font_white consignment_banner_text">Set the price you want &amp; we'll find the best consignment partners to help you sell your car</p>
+                    <div class="seperate_line"></div>
+                    <p class="consignment_desc">Let one of our partners help you market, sell &amp; handle the paperwork on your behalf, at the price you want.</p>
+                    <span class="consignment_btn">Consign your Car Now</span>
+                </div>
+                <div class="floatleft right_img">
+                    <img src="https://i.i-sgcm.com/tools_tips/consignment/lady.png">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="margin_center consignment_form">
+            <div class="row" id="form_table">
+                <div class="form-title">
+                    <div style="font-size:30px; color:#3F3F3F; " class="font_bold">Match with our Trusted Partners</div>
+                    <div style="font-size:17px; color:#777777; ">We will link you with them <br> within an hour</div>
+                </div>
+                <div class="form-right">
+                    <form name="enquiry_form" id="email_enquiry_form" action="consignment.php?utm_source=sgcm&amp;utm_term=converted2" method="POST">
+                        <div class="formbox">
+                            <input type="text" placeholder="Name" id="buyer_name" name="Name" class="inputtextcss" >
+                            <input type="text" id="buyer_contact" placeholder="Contact No." name="Contact" maxlength="8" onkeypress="return numbersonly(this,event);" class="inputtextcss" >
+                            <input type="text" id="buyer_carplate" placeholder="Carplate" name="Carplate" maxlength="8" class="inputtextcss" value="">
+                        </div>
+                        <div class="formbox">
+                            <div class="select-wrapper">
+                                <select id="PlaceAdForm_fOwnerIdType" name="ownertype" class="inputtextcss">
+                                    <option value="">--Please Select--</option>
+                                    <option value="6">Owner ID Type : Business</option>
+                                    <option value="8">Owner ID Type : Club/Association/Organisation</option>
+                                    <option value="7">Owner ID Type : Company</option>
+                                    <option value="A">Owner ID Type : Foreign Company</option>
+                                    <option value="D">Owner ID Type : Foreign Identification Number</option>
+                                    <option value="4">Owner ID Type : Government</option>
+                                    <option value="B">Owner ID Type : Limited Liability Partnership</option>
+                                    <option value="C">Owner ID Type : Limited Partnership</option>
+                                    <option value="9">Owner ID Type : Professional</option>
+                                    <option value="1" selected="selected">Owner ID Type : Singapore NRIC</option>
+                                    <option value="5">Owner ID Type : Statutory Board</option>
+                                </select>
+                            </div>
+                            <input type="text" id="fOwnerID" name="ownerid" class="inputtextcss" maxlength="4" placeholder="Owner ID No. last 4 chars (eg 567D)">
+                        </div>
+                        <div class="submitbox">
+                            <div class="submit_btn">
+                                <a class="floatleft font_bold" id="form_btn" href="javascript:;" onclick="consignmentEmailCheck(document.enquiry_form);">Get Matched</a>
+                            </div>
+                            <input type="hidden" name="mobile" value="0">
+                            <input type="hidden" name="subject" value="Consignment Dealer Enquiry">
+                            <input type="hidden" name="postback" value="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+
+    <div class="margin_center" style="border: 2px solid #db1313">
+        <div class="consignment_title" align="center">Consign your Car in 3 Easy Steps</div>
+        <div class="stepconsign">
+            <div class="stepbox">
+                <img src="https://i.i-sgcm.com/tools_tips/consignment/one.png">
+                <h4 class="font_bold">Provide your Vehicle Details</h4>
+                <span class="consigment_text">Our consignment partners will contact you to find out more about your car
+                    and your selling price.</span>
+            </div>
+            <div class="stepbox">
+                <img src="https://i.i-sgcm.com/tools_tips/consignment/two.png">
+                <h4 class="font_bold">Sit Back &amp; Relax</h4>
+                <span class="consigment_text">They will help you to advertise and market your car for sale. Choose to
+                    leave your car at their showroom or continue to drive until its sold.</span>
+            </div>
+            <div class="stepbox">
+                <img src="https://i.i-sgcm.com/tools_tips/consignment/three.png">
+                <h4 class="font_bold">SOLD!</h4>
+                <span class="consigment_text">Once they find the perfect buyer for you, our consignment partners will
+                    handle all the paperwork. All you need to do? Bank in that cheque!</span>
+            </div>
+        </div>
+    </div>
+<br>
+    <div style="background-color: #F6F6F6;" style="border: 2px solid #db1313">
+        <div class="margin_center">
+            <p align="center" class="font_bold" style="font-size:32px;color:#3B3B3B;padding-top:60px;padding-bottom: 30px">The Benefits</p>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody><tr>
+                    <td width="235" align="center"><img src="https://i.i-sgcm.com/tools_tips/consignment/benefit_01.png">
+                    </td>
+                    <td width="235" align="center"><img src="https://i.i-sgcm.com/tools_tips/consignment/benefit_02.png">
+                    </td>
+                    <td width="235" align="center"><img src="https://i.i-sgcm.com/tools_tips/consignment/benefit_03.png">
+                    </td>
+                    <td width="235" align="center"><img src="https://i.i-sgcm.com/tools_tips/consignment/benefit_04.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div style="font-size:22px;color:#3B3B3B;width:190px;padding-top:10px;">You determine the price
+                            of your car</div>
+                    </td>
+                    <td align="center">
+                        <div style="font-size:22px;color:#3B3B3B;width:180px;padding-top:10px;">Free marketing and sales
+                            support</div>
+                    </td>
+                    <td align="center">
+                        <div style="font-size:22px;color:#3B3B3B;width:150px;padding-top:10px;">Pay only upon successful
+                            sale</div>
+                    </td>
+                    <td align="center">
+                        <div style="font-size:22px;color:#3B3B3B;width:150px;padding-top:10px;">No paperwork No Headache
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+            <div align="center" style="padding:60px 0;"><a href="popups/sell_by_consignment.php" class="i_popup read_consignment_btn cboxElement" style="color:#FFFFFF;">Understand more about Consigning your
+                    car</a></div>
+        </div>
+    </div>
+
+
+
+<br>
+
+<p align="center" style="border: 2px solid #db1313">
+    Hundreds of consignment cars are listed on Sgcarmart.<br>
+    Consign your car today and be a Happy Seller just like many others!
+</p>
+
+<br>
+
+<div align="center" style="border: 2px solid #db1313">
+    <a href="/used_cars/listing.php?CAT=5" target="_blank" class="view_consignment_btn">View All Consignment Cars</a>
+</div>
+
+</body>
+</html>
