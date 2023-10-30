@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PX8KM5V7');</script>
+        <!-- End Google Tag Manager -->
+    <title>addpost_step1</title>
+    <!-- You can include your CSS and other meta tags here -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX8KM5V7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form action="" id="infoform" name="infoform" class="E3_border">
+        <div style="padding:0 12px 16px;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td valign="top" colspan="2">
+                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10" colspan="2">
+                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table id="contactPersonTable0" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="130">Name<span class="font_red">*</span>:</td>
+                                        <td align="left" width="790">
+                                            <input name="name[0]" id="name0" type="text" class="poatadinput_border" style="width:230px" onkeypress="return charnumbersonly(this,event);">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2">
+                                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">Contact No.<span class="font_red">*</span>:</td>
+                                        <td align="left" valign="top">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <input name="contact[0]" id="contact0" type="text" class="poatadinput_border" style="width:230px;margin-bottom: 5px;" maxlength="8" onkeypress="return isNumberKey(event);">
+                                                            <table cellpadding="0" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr id="display_hotline_container">
+                                                                        <td valign="top" width="18" class="check_img" style="padding-top: 1px;">
+                                                                            <label class="customChkBox">
+                                                                                <input name="displayHotline_chkbox" type="checkbox" id="displayHotline_chkbox" value="y" checked="" style="height:14px; width:14px; position: relative;" onchange="checkEmailHotline('displayHotline')">
+                                                                                <span></span>
+                                                                            </label>
+                                                                            <input type="hidden" name="displayHotline" value="y">
+                                                                        </td>
+                                                                        <td>
+                                                                            <label for="displayHotline_chkbox">Display my contact number</label>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div id="addContactLink" style="display:block; padding-top:3px;">
+                                                                <a href="javascript:;" onclick="addNewContact();">Insert additional contact</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2">
+                                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table id="contactPersonTable1" width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none;">
+                                <tbody>
+                                    <tr>
+                                        <td width="130">2nd Contact Person:</td>
+                                        <td align="left" width="790">
+                                            <input name="name[1]" id="name1" type="text" class="poatadinput_border" style="width:230px" value="" onkeypress="return charnumbersonly(this,event);"> &nbsp;&nbsp;&nbsp;
+                                            <a href="javascript:;" onclick="removeNewContact(2);">Cancel</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2">
+                                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2nd Contact No.:</td>
+                                        <td align="left">
+                                            <input name="contact[1]" id="contact1" type="text" class="poatadinput_border" style="width:230px" maxlength="8" value="" onkeypress="return isNumberKey(event);">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2">
+                                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table id="contactPersonTable2" width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none;">
+                                <tbody>
+                                    <tr>
+                                        <td width="130">3rd Contact Person:</td>
+                                        <td align="left" width="790">
+                                            <input name="name[2]" id="name2" type="text" class="poatadinput_border" style="width:230px" value="" onkeypress="return charnumbersonly(this,event);"> &nbsp;&nbsp;&nbsp;
+                                            <a href="javascript:;" onclick="removeNewContact(3);">Cancel</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2">
+                                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3rd Contact No.:</td>
+                                        <td align="left">
+                                            <input name="contact[2]" id="contact2" type="text" class="poatadinput_border" style="width:230px" maxlength="8" value="" onkeypress="return isNumberKey(event);">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2">
+                                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table id="contactPersonTable3" width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none;">
+                                <tbody>
+                                    <tr>
+                                        <td width="130">4th Contact Person:</td>
+                                        <td align="left" width="790">
+                                            <input name="name[3]" id="name3" type="text" class="poatadinput_border" style="width:230px" value="" onkeypress="return charnumbersonly(this,event);"> &nbsp;&nbsp;&nbsp;
+                                            <a href="javascript:;" onclick="removeNewContact(4);">Cancel</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" colspan="2">
+                                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4th Contact No.:</td>
+                                        <td align="left">
+                                            <input name="contact[3]" id="contact3" type="text" class="poatadinput_border" style="width:230px" maxlength="8" value="" onkeypress="return isNumberKey(event);">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <script language="javascript"></script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5" colspan="2">
+                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="130" valign="top">Email Address<span class="font_red">*</span>:</td>
+                                        <td valign="top">
+                                            <input name="email" id="email" type="text" class="poatadinput_border" style="width:230px; margin-bottom: 5px;" >
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr id="display_email_container">
+                                                        <td valign="top" width="18" class="check_img" style="padding-top: 1px;">
+                                                            <label class="customChkBox">
+                                                                <input name="displayEmail_chkbox" type="checkbox" id="displayEmail_chkbox" checked="" style="height:14px; width:14px; position: relative;" onchange="checkEmailHotline('displayEmail')">
+                                                                <span></span>
+                                                            </label>
+                                                            <input type="hidden" name="displayEmail" value="y">
+                                                        </td>
+                                                        <td>
+                                                            <label for "displayEmail_chkbox">Enable enquiry via email</label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10" colspan="2">
+                            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="130">Create Password<span class="font_red">*</span>:</td>
+                                        <td align="left">
+                                            <input name="pass" id="ownerpass" type="password" maxlength="6" class="poatadinput_border" style="width:230px" autocomplete="off">
+                                        </td>
+                                        <td class="font_gray">&nbsp;&nbsp;4 to 6 alpha-numeric characters. Case-sensitive.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+        <div style="padding:12px 1px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" border="0" style="margin-left:12px;">
+                    <tbody><tr><td height="10" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                    <tr>
+                        <td colspan="3">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+                                <td valign="top" width="120" class="valign_top_padding">Car Plate No.<span class="font_red">*</span>:</td>
+                                <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                                <td valign="top"><input name="carplate" id="carplate" maxlength="8" type="text" class="poatadinput_border" style="width:230px" value=""><br><div class="font_gray" style="margin-top: 2px;">Carplate no. serves as your user ID.</div></td>
+                                <td valign="top" class="font_gray valign_top_padding">&nbsp;&nbsp;This carplate no. is for our verification purpose only and it will not be shown in your Ad.</td>
+                            </tr>	
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr><td height="12" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                    <tr>
+                        <td valign="top" width="120">Owner ID Type<span class="font_red">*</span>:</td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td>
+                                                            <select id="PlaceAdForm_fOwnerIdType" name="ownertype" style="width:235px;">
+                            <option value="">--Please Select--</option>
+                                                            <option value="6">Business (e.g. 51234567M)</option>
+                                                            <option value="8">Club/Association/Organisation (e.g. T08PQ1234A)</option>
+                                                            <option value="7">Company (e.g. 198912345K)</option>
+                                                            <option value="A">Foreign Company (e.g. T08FC1234A)</option>
+                                                            <option value="D">Foreign Identification Number (e.g. F/G1234567N)</option>
+                                                            
+                                                            <option value="4">Government (e.g. T08GA1234A)</option>
+                                                            <option value="B">Limited Liability Partnership (e.g. T08LL1234A)</option>
+                                                            <option value="C">Limited Partnership (e.g. T08LP1234A)</option>
+                                                            
+                                                            <option value="9">Professional (e.g. T08PQ1234A)</option>
+                                                            <option value="1" selected="selected">Singapore NRIC (e.g. S1234567D)</option>
+                                                            <option value="5">Statutory Board (e.g. T08GB1234A)</option>
+                                                            </select>
+                                                        </td>
+                    </tr>
+                    <tr><td colspan="3" height="10"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                    <tr>
+                        <td valign="top">Owner ID<span class="font_red">*</span>:</td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td>
+                            <table cellpadding="0" cellspacing="0">
+                            <tbody><tr>
+                                <td><input type="text" id="fOwnerID" name="ownerid" style="width:230px;" class="poatadinput_border" maxlength="4" value="" placeholder="(Input last 4 characters eg.567D)"></td>
+                                <td>&nbsp;<a href="javascript:;" onclick="jQuery.colorbox({iframe:true, innerWidth:600, innerHeight:120, href:'/used_cars/popups/whatOwnerID.php'});"><img src="https://i.i-sgcm.com/new_cars/whatisthis_icon_12x12.png" width="12" height="12"></a></td>
+                            </tr>
+                            </tbody></table>
+                        </td>        
+                    </tr>
+                    <tr><td colspan="3" height="10"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+
+                    <input id="easymode1" type="hidden" name="easymode" value="1">
+                    </tbody></table>
+                </td>
+            </tr>                        
+            </tbody></table>        
+            <div id="manualform" style="display:none">
+                <input name="rday" type="hidden" value="01">
+                <input name="rmonth" type="hidden" value="01">
+                <input name="ryear" type="hidden" value="2023">
+                <input name="engine" id="engine" type="hidden" value="">
+                <input name="omv" id="omv" type="hidden" value="">
+                <input name="arf" id="arf" type="hidden" value="">
+                <input name="coe" id="coe" type="hidden" value="">
+                <input name="cday" type="hidden" value="">
+                <input name="cmonth" type="hidden" value="">
+                <input name="cyear" type="hidden" value="">
+                <input name="owners" id="owners" type="hidden" value="select">
+                <input name="type" id="vehtype" type="hidden" value="">
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" style="margin-left:12px;">
+            <input type="hidden" name="model" id="model" value="">
+            <input type="hidden" name="chkopc" value="">
+            <input type="hidden" name="radopc" value="">
+            <tbody><tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120">Asking Price:</td>
+                        <td>S$&nbsp;</td>
+                        <td><input name="price" id="price" maxlength="7" type="text" class="poatadinput_border" style="width:106px" onkeypress="return isNumberKey(event)" value=""></td>
+                        <td class="font_gray" style="padding-left:10px;">Leave blank if you prefer buyers to quote you their price</td>
+                    </tr>	
+                    </tbody></table>
+                </td>
+            </tr>
+
+            <!-- Hidden fields -->
+            <input name="gear" type="hidden" value="Auto">
+            <input name="fuel" id="fuel" type="hidden" value="Petrol">
+            <!-- Hidden fields -->
+
+            <tr><td height="10" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120">Mileage:</td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td><input name="mileage" id="mileage" maxlength="8" type="text" class="poatadinput_border" style="width:106px" onkeypress="return isNumberKey(event)" value=""></td>
+                        <td>&nbsp;km</td>
+                        <td class="font_gray" style="padding-left:10px;">Leave blank if unavailable</td>
+                    </tr>	
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr><td height="10" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td valign="top" width="135">Preferred Viewing Area</td>
+                        <td align="left"><input name="postal" type="text" maxlength="6" class="poatadinput_border" style="width:230px" value=""></td>
+                        <td class="font_gray">&nbsp;&nbsp;The postal code will not be shown in your ad. Only the area will be shown. <a href="javascript:;" onclick="jQuery.colorbox({iframe:true, innerWidth:596, innerHeight:400, href:'popups/postal_area.php'});">See example</a>.</td>
+                    </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr><td height="10" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120">Vehicle Features:</td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td><textarea name="features" id="features" cols="68" rows="3" class="textarea_step2" onfocus="this.select();" onkeydown="limitText(this, obj('vehiclefeatures_chars'), 150);" onkeyup="limitText(this, obj('vehiclefeatures_chars'), 150);" style="width:361px;"></textarea></td>
+                        <td valign="top">&nbsp;<a href="popups/features.php" class="examples cboxElement">Example</a></td>
+                    </tr>	
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr><td height="4" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td>You have&nbsp;</td>
+                        <td><input id="vehiclefeatures_chars" class="chars_left" type="text" value="150" readonly="readonly" disabled="disabled"></td>
+                        <td>&nbsp;characters left.</td>
+                    </tr>	
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr><td height="10" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120">Accessories:</td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td><textarea name="accessories" id="accessories" cols="68" rows="3" class="textarea_step2" onfocus="this.select();" onkeydown="limitText(this, obj('accessories_chars'), 150);" onkeyup="limitText(this, obj('accessories_chars'), 150);" style="width:361px;"></textarea></td>
+                        <td valign="top">&nbsp;<a href="popups/accessories.php" class="examples cboxElement">Example</a></td>
+                    </tr>	
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr><td height="2" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td>You have&nbsp;</td>
+                        <td><input id="accessories_chars" class="chars_left" type="text" value="150" readonly="readonly" disabled="disabled"></td>
+                        <td>&nbsp;characters left.</td>
+                    </tr>	
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr><td height="10" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120">Description:</td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td><textarea name="description" id="description_desc" cols="68" rows="3" class="textarea_step2" onfocus="this.select();" onkeydown="limitText(this, obj('description_chars'), 400);" onkeyup="limitText(this, obj('description_chars'), 400);" style="width:361px;"></textarea></td>
+                        <td valign="top">&nbsp;<a href="popups/description.php" class="examples cboxElement">Example</a></td>
+                    </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr><td height="4" colspan="3"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+            <tr>
+                <td colspan="3">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="120"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                        <td>You have&nbsp;</td>
+                        <td><input id="description_chars" class="chars_left" type="text" value="400" readonly="readonly" disabled="disabled"></td>
+                        <td>&nbsp;characters left.</td>
+                    </tr>	
+                    </tbody></table>
+                </td>
+            </tr>
+            </tbody></table>
+            <div id="starad_details" style="display:none">
+                <div style="margin-top:15px;">
+                    <div class="new_curvebanner_side" style="height: 35px;">
+                        <div class="newcurvebanner_left" style="color: #C40000; margin: 0 0 0 12px; line-height: 35px;">STARAD DETAILS</div>
+                    </div>
+                </div>
+                <div style="padding: 0 12px 12px;">
+                    <div>
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td width="130" valign="top">Date of Insertion:</td>
+                            <td>
+                                <table cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td>
+                                    <select name="DOI" class="poatadinput_border">
+                                    <option value="activation">Upon activation of advertisement</option>
+                                                                                <option value="01/11/23">01/11/23</option>
+                                                                                <option value="02/11/23">02/11/23</option>
+                                        <option value="03/11/23">03/11/23</option>
+                                        <option value="04/11/23">04/11/23</option>
+                                        <option value="05/11/23">05/11/23</option>
+                                        <option value="06/11/23">06/11/23</option>
+                                        <option value="07/11/23">07/11/23</option>
+                                                                            </select>
+                                    </td>
+                                </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr><td height="10" colspan="2"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                        <tr>
+                            <td width="130" valign="top">Title:</td>
+                            <td>
+                                <table cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td><textarea name="staradtitle" id="staradtitle" cols="68" rows="3" class="textarea_step" onfocus="if(this.value=='Enter important information here, such as year reg, model name, price.'){this.value='';};this.style.color='#000'" onblur="if(this.value==''){this.value='Enter important information here, such as year reg, model name, price.'; this.style.color='#A1A1A1';}" onkeydown="limitText(this, obj('title_chars'), 52);" onkeyup="limitText(this, obj('title_chars'), 52);">Enter important information here, such as year reg, model name, price.</textarea></td>
+                                    <td valign="top">&nbsp;Eg. 2004 Toyota Vios 1.5A at $35K</td>
+                                </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr><td height="4" colspan="2"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                        <tr>
+                            <td><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                            <td>
+                                <table cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td>You have&nbsp;</td>
+                                    <td><input id="title_chars" class="chars_left" type="text" value="52" readonly="readonly" disabled="disabled"></td>
+                                    <td>&nbsp;characters left.</td>
+                                </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr><td height="10" colspan="2"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                        <tr>
+                            <td valign="top">Description:</td>
+                            <td>
+                                <table cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td><textarea name="staraddesc" id="staraddesc" cols="68" rows="3" class="textarea_step" onfocus="if(this.value=='Enter your vehicle selling points here.'){this.value='';};this.style.color='#000'" onblur="if(this.value==''){this.value='Enter your vehicle selling points here.'; this.style.color='#A1A1A1';}" onkeydown="limitText(this, obj('desc_chars'), 80);" onkeyup="limitText(this, obj('desc_chars'), 80);">Enter your vehicle selling points here.</textarea></td>
+                                    <td valign="top">&nbsp;Eg. Very low mileage, immaculate<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;condition, cheapest in the market, etc.</td>
+                                </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr><td height="4" colspan="2"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                        <tr>
+                            <td><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                            <td>
+                                <table cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td>You have&nbsp;</td>
+                                    <td><input id="desc_chars" class="chars_left" type="text" value="80" readonly="readonly" disabled="disabled"></td>
+                                    <td>&nbsp;characters left.</td>
+                                </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr><td height="4" colspan="2"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td></tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+            <img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer">
+            <div class="concierge_documents_div" id="concierge_div" style="margin-top: 25px;">
+                <div style="display: flex;">
+                    <div class="img_container">
+                        <img src="https://i.i-sgcm.com/owner/concierge-service.svg" alt="" style="margin-left: 32px;">
+                    </div>
+                    <div style="flex-grow: 1; margin: auto;">
+                        <div id="concierge_documents_head">
+                            <div id="concierge_documents_title">One-Stop Concierge Service</div>
+                        </div>
+                        <div id="concierge_documents_text">
+                            Request for an Sgcarmart Sales Agent to help you sell your car quickly and easily. We will advise you on the best listing price, handle all buyers' enquiries and viewing. After you accept the offer, we will help with the car loan, motor insurance, paperwork, payments and ownership transfer. This process is hassle-free, and will help you get the best possible price for your car.
+                        </div>
+                    </div>
+                    <div id="concierge_documents_check">
+                        <label class="switch" id="concierge_check_label">
+                            <input type="checkbox" name="concierge_check" id="concierge_check" value="0" style="margin-top:3px;" onclick="slide_option('concierge_service')">
+                            <span class="slider round">
+                                <span id="concierge_slider" class="slider_before"></span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+                            <div class="concierge_documents_div" id="documents_div" style="margin-bottom: 24px;">
+                <div style="display: flex;">
+                    <div class="img_container">
+                        <img src="https://i.i-sgcm.com/owner/essential-documents.svg" alt="" style="margin-left: 24px;">
+                    </div>
+                    <div>
+                        <div style="flex-grow: 1;">
+                            <div id="concierge_documents_head">
+                                <div id="concierge_documents_title">Essential Documents Pack</div>
+                            </div>
+                            <div id="concierge_documents_text">
+                                Once your ad is published, we will mail you a FREE set of essential forms you need for the transaction. It contains useful documents like Indemnity Form, Sales Agreement, Receipt etc.
+                            </div>
+                            <div id="documents_inputs" style="display: block;">
+                                <input class="doc_input" type="text" name="doc_mailing_address" id="doc_mailing_address" value="" placeholder="Mailing Address*">
+                                <input class="doc_input" type="text" name="doc_postal_code" id="doc_postal_code" value="" placeholder="Postal Code*" maxlength="6">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="concierge_documents_check">
+                        <label class="switch" id="documents_check_label">
+                            <input type="checkbox" name="documents_check" id="documents_check" value="y" style="margin-top:3px;" onclick="slide_option('documents_pack')" checked="checked">
+                            <span class="slider round slider_check"><span id="documents_slider" class="slider_before slider_check_before"></span></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+                            <table style="width: 100%;">
+            <tbody><tr>
+                <td width="120">&nbsp;</td>
+                <td width="15"><img src="https://i.i-sgcm.com/images/spacer.gif" width="1" height="1" alt="spacer"></td>
+                <td id="warning" height="18" style="padding:5px 0;">
+                    <table cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td valign="top" width="26" class="check_img" style="padding-top: 1px;">
+                            <label class="customChkBox">
+                                <input name="agree_tc" type="checkbox" id="agree_tc" value="1" style="height:14px; width:14px;">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td><label for="agree_tc">I agree to adhere to the <a href="popups/ownertnc.php" class="termsconditions cboxElement">Direct Owner Advertising T&amp;C</a>, <a href="popups/tnc.php" class="termsconditions cboxElement">Advertising General T&amp;C</a> &amp; <a href="popups/guidelines.php" id="guideline" class="cboxElement">Guidelines of Advertisement Content</a>.<br>I also give consent to Sgcarmart to contact me on matters related to my vehicle.</label></td>
+                    </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            </tbody></table>
+            <div style="width: 100%; text-align: center; margin: 28px 0 38px;">
+                <input type="button" value="Upload photos" onclick="validateform()" class="proceed">
+            </div>
+        </div>
+
+
+
+
+    </form>
+
+    <!-- You can include your JavaScript code here -->
+</body>
+</html>
