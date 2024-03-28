@@ -6,8 +6,6 @@ import os
 import google.generativeai as genai
  
 Api_key="AIzaSyCXcRs39a4Si3_vJBZSW69KS0x62YWXZSs"
-# genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
- 
 genai.configure(api_key=Api_key)
  
 # function to load gemini pro model and responces
@@ -17,7 +15,6 @@ def get_gemini_response(question):
     return response.text
  
 #initialize our streamlip application
- 
 st.set_page_config(page_title="Q&A Demo")
 st.header("Gemini LLM Application")
  
@@ -29,6 +26,21 @@ submit=st.button("Ask the question")
  
 if submit:
     response=get_gemini_response(input)
-    st.subheader("The response is")
+    st.subheader("Response:")
     st.write(response)
-   
+
+
+
+
+# # Loop for asking questions
+# for i in range(10):
+# # User input
+#     input = st.text_area("Input:", height=None)
+
+# #submit button
+#     submit=st.button("Ask the question")
+ 
+#     if submit:
+#         response=get_gemini_response(input)
+#         st.subheader("Response:")
+#         st.write(response)
