@@ -21,11 +21,14 @@ def get_gemini_response(question):
 st.set_page_config(page_title="Q&A Demo")
 st.header("Gemini LLM Application")
  
-input=st.text_input("Input: ",key='input')
+# User input
+input_text = st.text_area("Input:", height=None)
+
+#submit button
 submit=st.button("Ask the question")
  
 if submit:
-    response=get_gemini_response(input)
+    response=get_gemini_response(input_text)
     st.subheader("The response is")
     st.write(response)
    
